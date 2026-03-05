@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0</TargetFrameworks>
@@ -47,6 +47,37 @@
         <EmbeddedResource Include="Headers\Opcodes\Global.txt" />
         <EmbeddedResource Include="Headers\Opcodes\TraditionalChinese.txt" />
         <EmbeddedResource Include="Headers\Opcodes\Korean.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Headers\Opcodes\Chinese.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Opcodes\Chinese.txt</TargetPath>
+            <Pack>True</Pack>
+            <PackagePath>lib\$(TargetFrameworks)\Opcodes</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+        <Content Include="Headers\Opcodes\Global.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Opcodes\Global.txt</TargetPath>
+            <Pack>True</Pack>
+            <PackagePath>lib\$(TargetFrameworks)\Opcodes</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+        <Content Include="Headers\Opcodes\TraditionalChinese.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Opcodes\TraditionalChinese.txt</TargetPath>
+            <Pack>True</Pack>
+            <PackagePath>lib\$(TargetFrameworks)\Opcodes</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+        <Content Include="Headers\Opcodes\Korean.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Opcodes\Korean.txt</TargetPath>
+            <Pack>True</Pack>
+            <PackagePath>lib\$(TargetFrameworks)\Opcodes</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
